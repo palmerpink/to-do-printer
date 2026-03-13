@@ -17,11 +17,11 @@ for list in tasks:
         todos = f"""
         <h1>{task.content}</h1>
         <p>
-            TID: {task.id}<br>
-            DES: {task.description}<br>
-            PRI: {task.priority}<br>
-            LAB: {task.labels}<br>
-            PAR: {task.parent_id}
+            <b>TID:</b> {task.id}<br>
+            <b>DES:</b> {task.description}<br>
+            <b>PRI:</b> {task.priority}<br>
+            <b>LAB:</b> {", ".join(task.labels)}<br>
+            <b>PAR:</b> {task.parent_id}
         </p>
         """
         printer = HtmlEasyPrinting()
