@@ -15,8 +15,8 @@ api = TodoistAPI(environ.get("TODO_API"))
 tasks = api.filter_tasks(query="today")
 
 quote = f"""
-        <p>Quote of the day for {date.random()}</p>
-        <h1>{zenquotespy.today()}</h1>"""
+        <p>Quote of the day for {date.today()}</p>
+        <h1>{zenquotespy.random()}</h1>"""
 printer = HtmlEasyPrinting()
 printer.GetPageSetupData().SetMarginBottomRight(wx.Point(2, 2))
 printer.GetPageSetupData().SetMarginTopLeft(wx.Point(2, 2))
