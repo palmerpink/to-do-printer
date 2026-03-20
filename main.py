@@ -43,3 +43,5 @@ for list in tasks:
         printer.SetPromptMode(HtmlEasyPrinting.Prompt_Never)
         printer.PrintText(todos)
         app.MainLoop()
+
+api.remove_shared_label("new")
