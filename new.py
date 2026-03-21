@@ -21,6 +21,7 @@ for list in tasks:
             <b>DES:</b> {task.description}<br>
             <b>PRI:</b> {task.priority}<br>
             <b>LAB:</b> {", ".join(task.labels)}<br>
+            <b>DAT:</b> {task.due.string}<br>
             <b>PAR:</b> {task.parent_id}
         </p>
         """
