@@ -29,11 +29,11 @@ for list in tasks:
         todos = f"""
         <h1>{task.content}</h1>
         <p>
+            <b>DAT:</b> {date.today()}<br>
             <b>TID:</b> {task.id}<br>
             <b>DES:</b> {task.description}<br>
             <b>PRI:</b> {task.priority}<br>
             <b>LAB:</b> {", ".join(task.labels)}<br>
-            <b>DAT:</b> {task.due.string}<br>
             <b>PAR:</b> {task.parent_id}
         </p>
         """
