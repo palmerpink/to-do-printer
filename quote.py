@@ -10,6 +10,7 @@ quote = f"""
     <h1>{zenquotespy.random()}</h1>"""
 
 printer = HtmlEasyPrinting()
+printer.SetStandardFonts(size=+30) # this may only be needed in linux...
 printer.GetPageSetupData().SetMarginBottomRight(wx.Point(2, 2))
 printer.GetPageSetupData().SetMarginTopLeft(wx.Point(2, 2))
 printer.GetPageSetupData().SetPaperSize(wx.Size(80, 80))
