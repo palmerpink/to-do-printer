@@ -12,7 +12,7 @@ app = wx.App()
 
 api = TodoistAPI(environ.get("TODO_API"))
 
-tasks = api.filter_tasks(query="today")
+tasks = api.filter_tasks(query="today&!@stand")
 
 quote = f"""
         <p>Quote of the day for {date.today()}</p>
